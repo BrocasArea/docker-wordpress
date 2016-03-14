@@ -11,7 +11,6 @@ db:
   image: mariadb
   volumes:
     - ./data/mysql:/var/lib/mysql
-  environment:
-    MYSQL_ROOT_PASSWORD: example
-
+  env_file:
+    - ./env
 
