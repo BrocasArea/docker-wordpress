@@ -6,6 +6,7 @@ wordpress:
     - 80:80
   volumes:
     - ./data/html:/var/www/html
+    - ./php-uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
 
 db:
   image: mariadb
